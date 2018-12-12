@@ -3,6 +3,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+  // figure out how to fix x-axis while image crops from y-axis, centered
 }
 
 // .container-fluid  {
@@ -10,10 +11,14 @@ body{
 //   background-color: black;
 // }
 
-// .row-12 {
-//   min-height: 300px;
-//   background-color: aquamarine;
-// }
+.row-fluid {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-group {
+
+}
 
 // .col-3  {
   
