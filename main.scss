@@ -6,18 +6,23 @@ body{
   // figure out how to fix x-axis while image crops from y-axis, centered
 }
 
-// .container-fluid  {
-//   min-height: 500px;
-//   background-color: black;
-// }
+.container-fluid  {
+  padding: 10px, 10px;
+  margin: 10px, 10px;
+}
 
 .row-fluid {
-  padding: 10px;
-  margin: 10px;
+  padding: 10px, 10px;
+  margin: 10px, 10px;
+}
+
+.col {
+  
 }
 
 .card-group {
-
+  padding: 10px, 10px;
+  margin: 10px, 10px;
 }
 
 // .col-3  {

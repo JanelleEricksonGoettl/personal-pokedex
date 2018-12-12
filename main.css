@@ -4,8 +4,16 @@ body {
   background-attachment: fixed;
   background-size: 100%; }
 
+.container-fluid {
+  padding: 10px, 10px;
+  margin: 10px, 10px; }
+
 .row-fluid {
-  padding: 10px;
-  margin: 10px; }
+  padding: 10px, 10px;
+  margin: 10px, 10px; }
+
+.card-group {
+  padding: 10px, 10px;
+  margin: 10px, 10px; }
 
 /*# sourceMappingURL=main.css.map */
