@@ -1,3 +1,9 @@
+html {
+  margin: 0;
+  padding: 0; }
 
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdna.artstation.com/p/assets/images/images/012/648/766/large/felippe-darezzo-pokeballs.jpg?1535824584");
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
