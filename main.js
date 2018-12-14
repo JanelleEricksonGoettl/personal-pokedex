@@ -21,34 +21,40 @@ class Pokemon {
     this.hp = hp;
     this.attack = attack;
     this.defense = defense;
-    this.abilities = abilities[i];
+    this.abilities = abilities;
   }
 }
 
 
 
-let stats = new Pokemon();
-
 // call for Archeops
-axios.get("https://pokeapi.co/api/v2/pokemon/567/")
+axios.get("https://fizal.me/pokeapi/api/v2/id/567.json")
   .then(response => {
-    let data = response.data;
-    let hp = data.stats[5];
-    let attack = data.stats[4];
-    let defense = data.stats[];
-
-    console.log(response.data);
-  
-  })
-
-// // call for Armaldo
-// axios.get("https://pokeapi.co/api/v2/pokemon/348/")
-//   .then(response => {
     
-//   })
+    let data = response.data;
 
-//   // call for Rampardos
-// axios.get("https://pokeapi.co/api/v2/pokemon/409/")
-// .then(response => {
-  
-// })
+    let hp = data.stats[5].base_stat;
+    let attack = data.stats[4].base_stat;
+    let defense = data.stats[3].base_stat;
+    let ability1 = data.abilities[0].ability.name;
+    let abilities = (ability1);
+
+    // let abilityArray = [];
+    // for (let i = 0; i < abilities.length; i++) {
+    //   abilityArray.push(abilities[i].ability.name);
+    // };
+
+    let archeops = new Pokemon(
+      hp,
+      attack,
+      defense,
+      abilities
+    );
+
+    let statText = document.querySelector(".pokemon");
+
+    statText.innerHTML += `<p class="stats"> ${archeops.hp} </p>`;
+    statText.innerHTML += `<p class="stats"> ${archeops.attack} </p>`;
+    statText.innerHTML += `<p class="stats"> ${archeops.defense} </p>`;
+    statText.innerHTML += `<p class="stats"> ${archeops.abilities} </p>`;
+})
