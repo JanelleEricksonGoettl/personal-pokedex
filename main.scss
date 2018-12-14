@@ -24,14 +24,13 @@ $fade-color: $periwinkle;
 // }
 
 body  {
-  // fix the bg img with cover and whatever
-  // background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://cdna.artstation.com/p/assets/images/images/012/648/766/large/felippe-darezzo-pokeballs.jpg?1535824584");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center center;
-  // color: #fff;
-  // height: 450px;
-  // padding-top: 50px;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("Images/unova-map-drawn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 450px;
+  padding-top: 50px;
 }
 
 h1  {
