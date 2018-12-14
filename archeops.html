@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <!-- <link href="" rel="stylesheet"> This is for Fonts -->
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Document</title>
@@ -13,15 +14,46 @@
 
 <body>
   <!-- this is JUST for Archeops -->
-  
+
   <div class="container-fluid">
+
+    <ul class="nav nav-pills justify-content-center">
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="index.html">Pokedex</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="archeops.html">Archeops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="armaldo.html">Armaldo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rampardos.html">Rampardos</a>
+      </li>
+
+    </ul>
 
     <div class="row">
 
-      <div class="col">
+      <div class="col d-flex justify-content-center">
 
-        <div class="card">
-          
+        <div class="card" style="width:500px">
+
+          <div class="card-header">
+            <h1>Archeops</h1>
+            <h3>descriptions</h3>
+          </div>
+          <div class="card-body">
+            <img class="card-img" src=" # " alt="Card image">
+          </div>
+          <div class="card-footer">
+            <h2> STATS </h2>
+            <div class="pokemon">
+              <!-- AJAX call populates here -->
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -30,24 +62,19 @@
 
   </div>
 
-  <h1>Archeops</h1>
-  <h3>descriptions</h3>
-  <img src="" alt="">
-  <h2>Stats</h2>
-  <div class="pokemon">
-
-  </div>
-  <p></p>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X  +965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2 +9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3  +MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X  +965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2 +9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3  +MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="main.js"></script>
   <script src="archeops.js"></script>
-  
+
 </body>
 
 </html>
