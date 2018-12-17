@@ -9,7 +9,12 @@ axios.get("https://fizal.me/pokeapi/api/v2/id/348.json")
     let hp = data.stats[5].base_stat;
     let attack = data.stats[4].base_stat;
     let defense = data.stats[3].base_stat;
-    let abilities = data.abilities[0, 1].ability.name;
+
+    let arrAbs = [];    
+    for (let i = 0; i < response.data.abilities.length; i++){
+        arrAbs.push(response.data.abilities[i].ability.name)
+    };
+    let abilities = arrAbs;
 
     let armaldo = new Pokemon(
       hp,
@@ -20,8 +25,8 @@ axios.get("https://fizal.me/pokeapi/api/v2/id/348.json")
 
     let statText = document.querySelector(".pokemon");
 
-    statText.innerHTML += `<p class="stats"> ${armaldo.hp} </p>`;
-    statText.innerHTML += `<p class="stats"> ${armaldo.attack} </p>`;
-    statText.innerHTML += `<p class="stats"> ${armaldo.defense} </p>`;
-    statText.innerHTML += `<p> ability ${armaldo.abilities} </p>`;
+    statText.innerHTML += `<p> HP:  ${armaldo.hp} </p>`;
+    statText.innerHTML += `<p> Attack: ${armaldo.attack} </p>`;
+    statText.innerHTML += `<p> Defense: ${armaldo.defense} </p>`;
+    statText.innerHTML += `<p> Abilities: ${armaldo.abilities} </p>`;
 })
