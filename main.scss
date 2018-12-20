@@ -13,16 +13,6 @@ $bg-color: $olive;
 $hover-color: $sepia;
 $fade-color: $periwinkle;
 
-
-
-
-
-// BASE
-// html  {
-//   margin: 0;
-//   padding: 0;
-// }
-
 .bg-img  {
   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("image/unova-map-drawn.jpg");
   background-repeat: no-repeat;
@@ -32,35 +22,6 @@ $fade-color: $periwinkle;
   height: 450px;
   padding-top: 50px;
 }
-
-h1  {
-
-}
-
-p {
-
-}
-
-img {
-
-}
-
-
-
-// CLASSES defined
-
-// applied background image to CSS because of guidance from:
-// http://blog.creative-tim.com/web-design/bootstrap-background-image/
-// .jumbotron-bg-img {
-//   background-image: url("http://i.jeuxactus.com/datas/jeux/p/o/pokmon-emeraude/xl/pokmon-emera-4e264ab2bbf86.jpg");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//  }
-
-.container  {
-// add definitions 
-}
-
 
 
 // :root {
